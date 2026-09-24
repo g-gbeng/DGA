@@ -1,0 +1,335 @@
+/* =========================================
+   RESPONSIVE STYLES
+========================================= */
+
+/* =========================================
+   TABLETS / SMALL LAPTOPS
+========================================= */
+
+@media (max-width: 1100px) {
+
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* =========================================
+   TABLETS
+========================================= */
+
+@media (max-width: 992px) {
+
+    .nav-links {
+        gap: 18px;
+    }
+
+    .about-preview {
+        gap: 40px;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .section {
+        padding: 70px 0;
+    }
+
+    .section-heading {
+        margin-bottom: 35px;
+    }
+
+    .section-heading h2 {
+        font-size: 2.1rem;
+    }
+
+    /* -----------------------------
+       NAVIGATION
+    ----------------------------- */
+
+    .navbar {
+        min-height: 70px;
+    }
+
+    .logo img {
+        width: 42px;
+        height: 42px;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        position: absolute;
+
+        top: 70px;
+        left: 0;
+
+        width: 100%;
+
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+
+        gap: 0;
+
+        padding: 10px 5% 20px;
+
+        background: var(--white);
+
+        border-top: 1px solid var(--border-light);
+        box-shadow: 0 10px 25px rgba(0, 51, 153, 0.08);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-links a {
+        display: block;
+        width: 100%;
+
+        padding: 13px 0;
+    }
+
+    .nav-links a::after {
+        display: none;
+    }
+
+    .nav-cta {
+        margin-top: 8px;
+        text-align: center;
+    }
+
+    /* -----------------------------
+       HERO
+    ----------------------------- */
+
+    .hero {
+        min-height: 100vh;
+        padding: 130px 0 80px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero-content p {
+        font-size: 0.98rem;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+        max-width: 330px;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+    }
+
+    /* -----------------------------
+       ABOUT PREVIEW
+    ----------------------------- */
+
+    .about-preview {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .about-preview-image img {
+        height: 380px;
+    }
+
+    .about-preview-image::after {
+        left: 10px;
+        top: 10px;
+    }
+
+    .about-preview-content h2 {
+        font-size: 2.2rem;
+    }
+
+    /* -----------------------------
+       SERVICES
+    ----------------------------- */
+
+    .services-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+    }
+
+    .service-card-image {
+        height: 190px;
+    }
+
+    .service-card-content {
+        padding: 20px;
+    }
+
+    /* -----------------------------
+       PROJECTS
+    ----------------------------- */
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card,
+    .project-card img {
+        min-height: 400px;
+    }
+
+    /* -----------------------------
+       BENEFITS
+    ----------------------------- */
+
+    .benefits-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+    }
+
+    .benefit-card {
+        padding: 28px 20px;
+    }
+
+    /* -----------------------------
+       TESTIMONIALS
+    ----------------------------- */
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* -----------------------------
+       CTA
+    ----------------------------- */
+
+    .consultation-cta {
+        padding: 55px 25px;
+    }
+
+    .consultation-cta h2 {
+        font-size: 2.1rem;
+    }
+
+    /* -----------------------------
+       FOOTER
+    ----------------------------- */
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    /* -----------------------------
+       WHATSAPP
+    ----------------------------- */
+
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+
+        right: 17px;
+        bottom: 17px;
+    }
+}
+
+
+/* =========================================
+   SMALL PHONES
+========================================= */
+
+@media (max-width: 480px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .section {
+        padding: 60px 0;
+    }
+
+    .section-heading h2 {
+        font-size: 2rem;
+    }
+
+    .hero {
+        padding-top: 120px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.35rem;
+    }
+
+    .hero-content p {
+        font-size: 0.94rem;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card-image {
+        height: 220px;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-preview-image img {
+        height: 300px;
+    }
+
+    .about-preview-content h2 {
+        font-size: 2rem;
+    }
+
+    .project-card,
+    .project-card img {
+        min-height: 360px;
+    }
+
+    .project-card-overlay {
+        padding: 22px;
+    }
+
+    .consultation-cta {
+        padding: 45px 20px;
+    }
+
+    .consultation-cta h2 {
+        font-size: 1.9rem;
+    }
+}
