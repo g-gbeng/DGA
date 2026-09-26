@@ -8,24 +8,101 @@
     <title>About Us | Digital Global Associates</title>
 
     <meta name="description"
-        content="Learn about Digital Global Associates, our history, mission, vision, values, team and professional experience since 2012.">
+        content="Learn about Digital Global Associates, our history, mission, vision, values, team, health and safety commitments, and professional experience since 2012.">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/animations.css">
 
+    <!-- Page-Specific Responsive Layouts -->
+    <style>
+        /* =========================================
+           CORE VALUES GRID
+        ========================================= */
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 24px;
+            align-items: stretch;
+        }
+
+        .values-grid .value-card {
+            min-width: 0;
+            height: 100%;
+        }
+
+
+        /* =========================================
+           TEAM GRID
+        ========================================= */
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 30px;
+            align-items: stretch;
+        }
+
+        .team-grid .team-card {
+            min-width: 0;
+            height: 100%;
+        }
+
+
+        /* =========================================
+           TABLET RESPONSIVENESS
+        ========================================= */
+
+        @media (max-width: 1024px) {
+
+            .values-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .team-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+        }
+
+
+        /* =========================================
+           MOBILE RESPONSIVENESS
+        ========================================= */
+
+        @media (max-width: 600px) {
+
+            .values-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .team-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+        }
+    </style>
+
     <!-- Meta Pixel -->
     <script src="js/meta-pixel.js"></script>
 </head>
+
 
 <body>
 
@@ -38,16 +115,25 @@
         <div class="container navbar">
 
             <a href="index.html" class="logo">
-                <img src="assets/images/logo/logo.png" alt="Digital Global Associates logo">
+
+                <img src="assets/images/logo/logo.png"
+                    alt="Digital Global Associates logo">
 
                 <span>Digital Global Associates</span>
+
             </a>
 
-            <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+
+            <button class="menu-toggle"
+                aria-label="Toggle navigation"
+                aria-expanded="false">
+
                 <span></span>
                 <span></span>
                 <span></span>
+
             </button>
+
 
             <nav class="nav-links">
 
@@ -100,7 +186,7 @@
 
                     <h1>
                         Building With Experience,
-                        Integrity & Purpose
+                        Integrity & Purpose.
                     </h1>
 
                     <p>
@@ -128,7 +214,8 @@
 
                     <div class="about-story-image reveal-left">
 
-                        <img src="assets/images/hero/" alt="Company construction project">
+                        <img src="assets/images/hero/"
+                            alt="Company construction project">
 
                     </div>
 
@@ -144,34 +231,43 @@
                         </h2>
 
                         <p>
-                            Digital Global Associates first began as sub-contractors providing trenching
-                            and other construction services to a range of civil projects in Nigeria.
+                            Digital Global Associates first began as
+                            sub-contractors providing trenching and
+                            other construction services to a range of
+                            civil projects in Nigeria.
                         </p>
 
                         <p>
-                            Our industry expertise, combined to our excellent service delivery strategy and after
-                            sales support has put us in the right stead before our clients and today, we have
-                            become one of the fastest growing, indigenous civil construction and engineering
-                            works solution providers in the construction industry with significant footprints across multpile projects.
-                            
+                            Our industry expertise, combined with our
+                            excellent service delivery strategy and
+                            after-sales support, has positioned us
+                            favourably before our clients. Today, we
+                            have become one of the fastest-growing
+                            indigenous civil construction and
+                            engineering works solution providers
+                            in the construction industry, with
+                            significant footprints across multiple
+                            projects.
                         </p>
 
                         <p>
-                            Overtime, Digital Global Associates Construction Company Limited has served and is
-                            still serving the civil construction and engineering works needs of a cross section of
-                            private and corporate clients cutting across various sectors of the Nigerian economy.
-                            
+                            Over time, Digital Global Associates
+                            Construction Company Limited has served
+                            and continues to serve the civil
+                            construction and engineering needs of
+                            private and corporate clients across
+                            various sectors of the Nigerian economy.
                         </p>
-
 
                         <p>
-                            Digital Global Associates Construction Company Limited will continuously explore
-opportunities that will position her to set irreducible standards of service delivery in
-Nigeria’s construction industry while growing its presence as a valuable growth
-partners in Africa.
+                            Digital Global Associates Construction
+                            Company Limited will continuously explore
+                            opportunities that position us to set
+                            irreducible standards of service delivery
+                            in Nigeria's construction industry while
+                            growing our presence as a valuable growth
+                            partner in Africa.
                         </p>
-
-                        
 
                     </div>
 
@@ -223,7 +319,10 @@ partners in Africa.
                         </h3>
 
                         <p>
-                            To leverage our sector expertise and build trust as means of meeting and exceeding the expectations of our clients in service delivery at all times.
+                            To leverage our sector expertise and build
+                            trust as means of meeting and exceeding
+                            the expectations of our clients in service
+                            delivery at all times.
                         </p>
 
                     </article>
@@ -242,7 +341,8 @@ partners in Africa.
                         </h3>
 
                         <p>
-                            To be Nigeria's most valuable indigenous civil projects development company.
+                            To be Nigeria's most valuable indigenous
+                            civil projects development company.
                         </p>
 
                     </article>
@@ -282,6 +382,8 @@ partners in Africa.
 
                 <div class="values-grid">
 
+                    <!-- Value 1 -->
+
                     <article class="value-card reveal">
 
                         <div class="value-number">
@@ -293,12 +395,13 @@ partners in Africa.
                         </h3>
 
                         <p>
-                            We operate with honesty, transparency and
-                            professional responsibility.
+                            We uphold honesty, transparency, and ethical conduct in every decision, partnership, and project we undertake.
                         </p>
 
                     </article>
 
+
+                    <!-- Value 2 -->
 
                     <article class="value-card reveal">
 
@@ -311,12 +414,13 @@ partners in Africa.
                         </h3>
 
                         <p>
-                            We are committed to maintaining high
-                            standards throughout our work.
+                           We prioritize timely execution, efficient planning, and prompt service delivery while maintaining the standards our clients expect.
                         </p>
 
                     </article>
 
+
+                    <!-- Value 3 -->
 
                     <article class="value-card reveal">
 
@@ -329,12 +433,13 @@ partners in Africa.
                         </h3>
 
                         <p>
-                            We approach every project with expertise,
-                            discipline and accountability.
+                            We are committed to excellence in workmanship, materials, and project execution, ensuring reliable and lasting results.
                         </p>
 
                     </article>
 
+
+                    <!-- Value 4 -->
 
                     <article class="value-card reveal">
 
@@ -347,125 +452,10 @@ partners in Africa.
                         </h3>
 
                         <p>
-                            We seek to understand our clients' needs
-                            and deliver solutions around their goals.
+                            We listen to our clients, understand their requirements, and deliver tailored solutions that meet their expectations and build lasting relationships.
                         </p>
 
                     </article>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================================
-             INDUSTRIES & CLIENTS
-        ========================================== -->
-
-        <section class="section section-light">
-
-            <div class="container">
-
-                <div class="section-heading reveal">
-
-                    <span>
-                        Our Experience
-                    </span>
-
-                    <h2>
-                        Industries & Clients We Serve
-                    </h2>
-
-                    <p>
-                        Our experience extends across different
-                        sectors of the built environment.
-                    </p>
-
-                </div>
-
-
-                <div class="industries-grid">
-
-                    <div class="industry-card reveal">
-
-                        <div class="industry-icon">
-                            R
-                        </div>
-
-                        <h3>
-                            Residential
-                        </h3>
-
-                        <p>
-                            Homes, estates and residential developments.
-                        </p>
-
-                    </div>
-
-
-                    <div class="industry-card reveal">
-
-                        <div class="industry-icon">
-                            C
-                        </div>
-
-                        <h3>
-                            Commercial
-                        </h3>
-
-                        <p>
-                            Commercial buildings and business facilities.
-                        </p>
-
-                    </div>
-
-
-                    <div class="industry-card reveal">
-
-                        <div class="industry-icon">
-                            E
-                        </div>
-
-                        <h3>
-                            Educational
-                        </h3>
-
-                        <p>
-                            Educational facilities and institutional
-                            developments.
-                        </p>
-
-                    </div>
-
-
-                    <div class="industry-card reveal">
-
-                        <div class="industry-icon">
-                            I
-                        </div>
-
-                        <h3>
-                            Institutional
-                        </h3>
-
-                        <p>
-                            Institutional and community-focused projects.
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <div class="clients-note reveal">
-
-                    <p>
-                        <strong>
-                            DIGITAL GLOBAL ASSOCIATES:
-                        </strong>
-                        Architects, Civil Engineering, Turnkey Projects, Town  Planners, & Consultants.
-                    </p>
 
                 </div>
 
@@ -509,7 +499,8 @@ partners in Africa.
 
                         <div class="team-image">
 
-                            <img src="assets/images/team/team-member-1.jpg" alt="Team member">
+                            <img src="assets/images/team/team-member-1.jpg"
+                                alt="Team member 1">
 
                         </div>
 
@@ -539,7 +530,8 @@ partners in Africa.
 
                         <div class="team-image">
 
-                            <img src="assets/images/team/team-member-2.jpg" alt="Team member">
+                            <img src="assets/images/team/team-member-2.jpg"
+                                alt="Team member 2">
 
                         </div>
 
@@ -569,7 +561,101 @@ partners in Africa.
 
                         <div class="team-image">
 
-                            <img src="assets/images/team/team-member-3.jpg" alt="Team member">
+                            <img src="assets/images/team/team-member-3.jpg"
+                                alt="Team member 3">
+
+                        </div>
+
+                        <div class="team-content">
+
+                            <h3>
+                                Team Member Name
+                            </h3>
+
+                            <span>
+                                Professional Role
+                            </span>
+
+                            <p>
+                                Add the approved professional biography
+                                and responsibilities here.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Team Member 4 -->
+
+                    <article class="team-card reveal">
+
+                        <div class="team-image">
+
+                            <img src="assets/images/team/team-member-4.jpg"
+                                alt="Team member 4">
+
+                        </div>
+
+                        <div class="team-content">
+
+                            <h3>
+                                Team Member Name
+                            </h3>
+
+                            <span>
+                                Professional Role
+                            </span>
+
+                            <p>
+                                Add the approved professional biography
+                                and responsibilities here.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Team Member 5 -->
+
+                    <article class="team-card reveal">
+
+                        <div class="team-image">
+
+                            <img src="assets/images/team/team-member-5.jpg"
+                                alt="Team member 5">
+
+                        </div>
+
+                        <div class="team-content">
+
+                            <h3>
+                                Team Member Name
+                            </h3>
+
+                            <span>
+                                Professional Role
+                            </span>
+
+                            <p>
+                                Add the approved professional biography
+                                and responsibilities here.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Team Member 6 -->
+
+                    <article class="team-card reveal">
+
+                        <div class="team-image">
+
+                            <img src="assets/images/team/team-member-6.jpg"
+                                alt="Team member 6">
 
                         </div>
 
@@ -600,7 +686,7 @@ partners in Africa.
 
 
         <!-- =========================================
-             QUALIFICATIONS
+             HEALTH, SAFETY & ENVIRONMENTAL POLICY
         ========================================== -->
 
         <section class="section section-light">
@@ -609,113 +695,245 @@ partners in Africa.
 
                 <div class="qualifications-layout">
 
+                    <!-- POLICY INTRODUCTION -->
+
                     <div class="qualifications-content reveal-left">
 
                         <span class="section-label">
-                            Professional Standards
+                            Our Commitment
                         </span>
 
                         <h2>
-                            Qualifications, Registrations
-                            & Certifications
+                            Health, Safety & Environmental Policy
                         </h2>
 
                         <p>
-                            Our professional work is supported by
-                            relevant qualifications, registrations
-                            and certifications.
+                            At Digital Global Associates Construction
+                            Company Limited, we recognize that our
+                            people are the foundation of our success.
+                            We are committed to protecting their
+                            health, ensuring their safety, and
+                            providing a safe working environment
+                            that supports their well-being,
+                            productivity, and professional
+                            development.
                         </p>
 
                         <p>
-                            <strong>
-                                INFORMATION PLACEHOLDER:
-                            </strong>
-                            Add the company's verified professional
-                            qualifications, regulatory registrations,
-                            memberships, certificates and other
-                            credentials here.
+                            We recognize that compliance with
+                            applicable legislation, regulations,
+                            and recognized health, safety, and
+                            environmental practices is essential
+                            to responsible business operations.
+                            We strive to identify, assess, and
+                            manage potential and existing risks
+                            associated with our activities while
+                            protecting the environment and
+                            continuously improving the quality
+                            and safety of our projects.
+                        </p>
+
+                        <p>
+                            Our policy applies across our operations
+                            and provides a framework for consistent
+                            health, safety, and environmental
+                            practices, while allowing individual
+                            operations to adopt procedures that
+                            align with its principles and objectives.
                         </p>
 
                     </div>
 
 
+                    <!-- POLICY PRINCIPLES -->
+
                     <div class="qualifications-list reveal-right">
 
+                        <!-- Principle 1 -->
+
                         <div class="qualification-item">
 
                             <div class="qualification-icon">
-                                ✓
+                                <i class="fas fa-shield-alt"></i>
                             </div>
 
                             <div>
+
                                 <h3>
-                                    Professional Qualification
+                                    Employee Health & Safety
                                 </h3>
 
                                 <p>
-                                    Qualification / institution
-                                    placeholder.
+                                    Protect the health, safety, and
+                                    welfare of employees and others
+                                    who may be directly affected
+                                    by our operations.
                                 </p>
+
                             </div>
 
                         </div>
 
 
+                        <!-- Principle 2 -->
+
                         <div class="qualification-item">
 
                             <div class="qualification-icon">
-                                ✓
+                                <i class="fas fa-leaf"></i>
                             </div>
 
                             <div>
+
                                 <h3>
-                                    Professional Registration
+                                    Environmental Protection
                                 </h3>
 
                                 <p>
-                                    Registration body / number
-                                    placeholder.
+                                    Conduct our activities responsibly,
+                                    comply with applicable environmental
+                                    requirements, and minimize the
+                                    environmental impact of our
+                                    operations through sustainable
+                                    and cost-effective practices.
                                 </p>
+
                             </div>
 
                         </div>
 
 
+                        <!-- Principle 3 -->
+
                         <div class="qualification-item">
 
                             <div class="qualification-icon">
-                                ✓
+                                <i class="fas fa-graduation-cap"></i>
                             </div>
 
                             <div>
+
                                 <h3>
-                                    Certification
+                                    Training & Awareness
                                 </h3>
 
                                 <p>
-                                    Certification details
-                                    placeholder.
+                                    Provide regular employee training
+                                    and promote strict adherence to
+                                    health, safety, and environmental
+                                    policies and procedures.
                                 </p>
+
                             </div>
 
                         </div>
 
 
+                        <!-- Principle 4 -->
+
                         <div class="qualification-item">
 
                             <div class="qualification-icon">
-                                ✓
+                                <i class="fas fa-clipboard-check"></i>
                             </div>
 
                             <div>
+
                                 <h3>
-                                    Professional Membership
+                                    Monitoring & Continuous Improvement
                                 </h3>
 
                                 <p>
-                                    Professional body / association
-                                    placeholder.
+                                    Establish clear responsibilities,
+                                    reporting structures, and monitoring
+                                    systems to review compliance and
+                                    continually improve safety and
+                                    quality control measures.
                                 </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Principle 5 -->
+
+                        <div class="qualification-item">
+
+                            <div class="qualification-icon">
+                                <i class="fas fa-hand-paper"></i>
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Risk Prevention & Stop-Work Commitment
+                                </h3>
+
+                                <p>
+                                    Encourage employees to stop any
+                                    activity immediately when they
+                                    identify a breach of our HSE
+                                    policy or a condition that
+                                    compromises health, safety,
+                                    or environmental protection.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Principle 6 -->
+
+                        <div class="qualification-item">
+
+                            <div class="qualification-icon">
+                                <i class="fas fa-first-aid"></i>
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Emergency Preparedness
+                                </h3>
+
+                                <p>
+                                    Develop and maintain appropriate
+                                    emergency response systems to
+                                    address accidents, hazards, and
+                                    other emergencies arising from
+                                    our operations.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Principle 7 -->
+
+                        <div class="qualification-item">
+
+                            <div class="qualification-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Shared Responsibility
+                                </h3>
+
+                                <p>
+                                    Promote shared responsibility
+                                    between management, employees,
+                                    and business partners, ensuring
+                                    that partner HSE practices
+                                    substantially align with our
+                                    policy requirements.
+                                </p>
+
                             </div>
 
                         </div>
@@ -742,13 +960,11 @@ partners in Africa.
                     <div class="consultation-cta-content">
 
                         <h2>
-                            Have a Project in Mind?
+                            Learn More About What We Can Build Together
                         </h2>
 
                         <p>
-                            Let's discuss your project requirements
-                            and explore how our professional services
-                            can help bring your plans to life.
+                           Discover a construction partner committed to integrity, reliability, quality, and lasting client relationships. Let's discuss your project and explore how our team can help turn your vision into reality.
                         </p>
 
                         <a href="consultation.html" class="btn">
@@ -783,24 +999,38 @@ partners in Africa.
                 </h3>
 
                 <p>
-                    Professional construction, design and project
-                    management solutions delivered with quality,
-                    integrity and expertise.
+                    Building with trust, reliability, and excellence, delivering dependable construction solutions with integrity and professionalism from concept to completion.
                 </p>
+
                 <div class="social-links">
-                    <a href="https://www.tiktok.com/@keneonu?_r=1&_t=ZS-9A1Pi1eJqL6" aria-label="TikTok" target="_blank"
+
+                    <a href="https://www.tiktok.com/@keneonu?_r=1&_t=ZS-9A1Pi1eJqL6"
+                        aria-label="TikTok"
+                        target="_blank"
                         rel="noopener noreferrer">
+
                         <i class="fab fa-tiktok"></i>
+
                     </a>
 
                     <a href="https://www.instagram.com/digitalglobalassociates?stkn=b2hyc3JzNm1hZWd5"
-                        aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                        aria-label="Instagram"
+                        target="_blank"
+                        rel="noopener noreferrer">
+
                         <i class="fab fa-instagram"></i>
+
                     </a>
 
-                    <a href="https://www.linkedin.com/company/digital-global-associates-construction-company/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/company/digital-global-associates-construction-company/"
+                        aria-label="LinkedIn"
+                        target="_blank"
+                        rel="noopener noreferrer">
+
                         <i class="fab fa-linkedin-in"></i>
+
                     </a>
+
                 </div>
 
             </div>
@@ -819,12 +1049,6 @@ partners in Africa.
                     <li>
                         <a href="index.html">
                             Home
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="about.html">
-                            About Us
                         </a>
                     </li>
 
@@ -869,7 +1093,7 @@ partners in Africa.
 
                     <li>
                         <a href="services.html">
-                            Surveying
+                            Civil Construction
                         </a>
                     </li>
 
@@ -881,13 +1105,7 @@ partners in Africa.
 
                     <li>
                         <a href="services.html">
-                            Structural Design
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="services.html">
-                            Building Construction
+                            Drilling and Welding
                         </a>
                     </li>
 
@@ -925,7 +1143,7 @@ partners in Africa.
                     </li>
 
                     <li>
-                       Location: 35 Obidogonu Street Okpouno Otolo Nnewi, Anambra
+                        Location: 35 Obidogonu Street Okpouno Otolo Nnewi, Anambra
                     </li>
 
                     <li>
@@ -945,7 +1163,7 @@ partners in Africa.
 
                 <p>
                     &copy; 2026 Digital Global Associates.
-                    All Rights Reserved.
+                    
                 </p>
 
             </div>
@@ -956,14 +1174,18 @@ partners in Africa.
 
 
     <!-- =========================================
-         FLOATING WHATSAPP
-    ========================================== -->
+     FLOATING WHATSAPP
+========================================== -->
 
-    <a href="https://wa.me/2348034721796" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
-        aria-label="Chat with us on WhatsApp">
-        WA
-    </a>
+<a href="https://wa.me/2348034721796"
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Chat with us on WhatsApp">
 
+    <i class="fa-brands fa-whatsapp"></i>
+
+</a>
 
     <!-- =========================================
          JAVASCRIPT
