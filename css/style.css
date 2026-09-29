@@ -320,8 +320,8 @@ ul {
             rgba(0, 35, 105, 0.94),
             rgba(0, 51, 153, 0.78),
             rgba(0, 51, 153, 0.45)
-        ),
-        url("../assets/images/hero/hero.jpg") center/cover no-repeat;
+        );
+        
 
     color: var(--white);
 }
@@ -1075,8 +1075,8 @@ ul {
             90deg,
             rgba(0, 31, 92, 0.94),
             rgba(0, 51, 153, 0.78)
-        ),
-        url("../assets/images/hero/about-hero.jpg") center/cover no-repeat;
+        );
+       
 
     color: var(--white);
 }
@@ -3221,4 +3221,25 @@ ul {
         font-size: 1.2rem;
     }
 
+}
+
+/* Construction Service Learn More Link */
+.service-link {
+    display: inline-block;
+    color: #0054B7;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 12px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.service-link:hover {
+    color: #003399;
+    transform: translateX(5px);
+}
+
+.service-link:hover {
+    color: #003399;
+    transform: translateX(5px);
+    text-decoration: underline;
 }
