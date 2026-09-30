@@ -2,6 +2,7 @@
    RESPONSIVE STYLES
 ========================================= */
 
+
 /* =========================================
    TABLETS / SMALL LAPTOPS
 ========================================= */
@@ -9,7 +10,7 @@
 @media (max-width: 1100px) {
 
     .services-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .benefits-grid {
@@ -19,6 +20,104 @@
     .footer-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
+
+    /* -----------------------------
+       PROJECTS PAGE
+    ----------------------------- */
+
+    /*
+       The new Projects page must remain
+       a 2-column grid on laptops and
+       tablets.
+    */
+
+    .projects-page-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 22px;
+    }
+
+    .project-page-card {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .project-page-content {
+        padding: 30px;
+    }
+
+    .carousel-image-container {
+        height: 430px;
+    }
+
+
+    /* -----------------------------
+       LEADERSHIP / TEAM
+    ----------------------------- */
+
+    .ceo-profile {
+        grid-template-columns: 0.9fr 1.1fr;
+
+        gap: 35px;
+
+        padding: 30px;
+    }
+
+    .ceo-image {
+        height: 430px;
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 22px;
+    }
+
+
+    /* -----------------------------
+       COMPANY STORY
+    ----------------------------- */
+
+    .about-story {
+        grid-template-columns: 0.9fr 1.1fr;
+
+        gap: 35px;
+
+        padding: 30px;
+    }
+
+
+    /*
+       Do NOT force a height on the
+       About Story image here.
+
+       The original image dimensions
+       from style.css should control
+       the appearance.
+    */
+
+
+    /* -----------------------------
+       ABOUT PREVIEW
+    ----------------------------- */
+
+    .about-preview {
+        grid-template-columns: 0.9fr 1.1fr;
+
+        gap: 35px;
+
+        padding: 30px;
+    }
+
+
+    /*
+       Do NOT force a height on the
+       About Preview image here.
+
+       This preserves the original
+       image proportions.
+    */
+
 }
 
 
@@ -40,6 +139,13 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
+
+    /*
+       This is the older Projects grid.
+       The Projects page uses
+       .projects-page-grid instead.
+    */
+
     .projects-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -47,6 +153,21 @@
     .testimonials-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
+
+    /* -----------------------------
+       NEW PROJECTS PAGE
+    ----------------------------- */
+
+    /*
+       Keep the new Projects page
+       at exactly 2 columns.
+    */
+
+    .projects-page-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+
 }
 
 
@@ -67,6 +188,7 @@
     .section-heading h2 {
         font-size: 2.1rem;
     }
+
 
     /* -----------------------------
        NAVIGATION
@@ -94,7 +216,9 @@
         width: 100%;
 
         display: none;
+
         flex-direction: column;
+
         align-items: stretch;
 
         gap: 0;
@@ -104,7 +228,9 @@
         background: var(--white);
 
         border-top: 1px solid var(--border-light);
-        box-shadow: 0 10px 25px rgba(0, 51, 153, 0.08);
+
+        box-shadow:
+            0 10px 25px rgba(0, 51, 153, 0.08);
     }
 
     .nav-links.active {
@@ -117,6 +243,7 @@
 
     .nav-links a {
         display: block;
+
         width: 100%;
 
         padding: 13px 0;
@@ -128,8 +255,43 @@
 
     .nav-cta {
         margin-top: 8px;
+
         text-align: center;
     }
+
+
+    /* -----------------------------
+       LEADERSHIP / TEAM
+    ----------------------------- */
+
+    .ceo-profile {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+
+        margin-bottom: 60px;
+
+        padding: 25px;
+    }
+
+    .ceo-image {
+        height: 420px;
+    }
+
+    .ceo-content h3 {
+        font-size: 1.8rem;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 18px;
+    }
+
+    .team-content {
+        padding: 25px;
+    }
+
 
     /* -----------------------------
        HERO
@@ -137,6 +299,7 @@
 
     .hero {
         min-height: 100vh;
+
         padding: 130px 0 80px;
     }
 
@@ -150,7 +313,9 @@
 
     .hero-actions {
         flex-direction: column;
+
         align-items: stretch;
+
         max-width: 330px;
     }
 
@@ -158,27 +323,58 @@
         width: 100%;
     }
 
+
     /* -----------------------------
        ABOUT PREVIEW
     ----------------------------- */
 
     .about-preview {
         grid-template-columns: 1fr;
-        gap: 45px;
+
+        gap: 30px;
+
+        padding: 25px;
     }
 
-    .about-preview-image img {
-        height: 380px;
+
+    /*
+       No fixed height here.
+
+       This allows the original
+       About Preview image styling
+       from style.css to remain active.
+    */
+
+    .about-preview-content h3 {
+        font-size: 1.8rem;
     }
 
-    .about-preview-image::after {
-        left: 10px;
-        top: 10px;
+
+    /* -----------------------------
+       COMPANY STORY
+    ----------------------------- */
+
+    .about-story {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+
+        padding: 25px;
     }
 
-    .about-preview-content h2 {
+
+    /*
+       No fixed height here.
+
+       This allows the original
+       Company Story image styling
+       from style.css to remain active.
+    */
+
+    .about-story-content h2 {
         font-size: 2.2rem;
     }
+
 
     /* -----------------------------
        SERVICES
@@ -186,6 +382,7 @@
 
     .services-grid {
         grid-template-columns: 1fr 1fr;
+
         gap: 18px;
     }
 
@@ -197,8 +394,9 @@
         padding: 20px;
     }
 
+
     /* -----------------------------
-       PROJECTS
+       OLD PROJECTS GRID
     ----------------------------- */
 
     .projects-grid {
@@ -210,18 +408,105 @@
         min-height: 400px;
     }
 
+
+    /* -----------------------------
+       NEW PROJECTS PAGE
+    ----------------------------- */
+
+    /*
+       Keep the new project cards
+       side-by-side on tablets.
+
+       This means:
+       Project 1 | Project 2
+       Project 3 | Project 4
+    */
+
+    .projects-page-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+
+        gap: 18px;
+    }
+
+    .project-page-card {
+        width: 100%;
+        min-width: 0;
+        min-height: 330px;
+    }
+
+    .project-page-content {
+        padding: 25px;
+    }
+
+    .project-card-footer {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 18px;
+    }
+
+    .view-gallery-btn {
+        width: 100%;
+    }
+
+
+    /* -----------------------------
+       PROJECT GALLERY MODAL
+    ----------------------------- */
+
+    .project-gallery-modal {
+        padding: 15px;
+    }
+
+    .project-gallery-dialog {
+        padding: 25px;
+
+        max-height: 94vh;
+    }
+
+    .gallery-project-info {
+        padding-right: 45px;
+    }
+
+    .gallery-project-info h2 {
+        font-size: 1.7rem;
+    }
+
+
+    /*
+       object-fit: contain in style.css
+       keeps the full horizontal image
+       visible inside the carousel.
+    */
+
+    .carousel-image-container {
+        height: 380px;
+    }
+
+    .carousel-control {
+        flex: 0 0 40px;
+
+        width: 40px;
+
+        height: 40px;
+    }
+
+
     /* -----------------------------
        BENEFITS
     ----------------------------- */
 
     .benefits-grid {
         grid-template-columns: 1fr 1fr;
+
         gap: 18px;
     }
 
     .benefit-card {
         padding: 28px 20px;
     }
+
 
     /* -----------------------------
        TESTIMONIALS
@@ -230,6 +515,7 @@
     .testimonials-grid {
         grid-template-columns: 1fr;
     }
+
 
     /* -----------------------------
        CTA
@@ -243,14 +529,17 @@
         font-size: 2.1rem;
     }
 
+
     /* -----------------------------
        FOOTER
     ----------------------------- */
 
     .footer-grid {
         grid-template-columns: 1fr;
+
         gap: 35px;
     }
+
 
     /* -----------------------------
        WHATSAPP
@@ -258,11 +547,14 @@
 
     .whatsapp-float {
         width: 50px;
+
         height: 50px;
 
         right: 17px;
+
         bottom: 17px;
     }
+
 }
 
 
@@ -284,6 +576,11 @@
         font-size: 2rem;
     }
 
+
+    /* -----------------------------
+       HERO
+    ----------------------------- */
+
     .hero {
         padding-top: 120px;
     }
@@ -296,6 +593,11 @@
         font-size: 0.94rem;
     }
 
+
+    /* -----------------------------
+       SERVICES
+    ----------------------------- */
+
     .services-grid {
         grid-template-columns: 1fr;
     }
@@ -304,17 +606,54 @@
         height: 220px;
     }
 
-    .benefits-grid {
-        grid-template-columns: 1fr;
+
+    /* -----------------------------
+       ABOUT PREVIEW
+    ----------------------------- */
+
+    .about-preview {
+        padding: 18px;
+
+        border-radius: 14px;
     }
 
-    .about-preview-image img {
-        height: 300px;
+
+    /*
+       No fixed image height.
+       Original image proportions
+       remain intact.
+    */
+
+    .about-preview-content h3 {
+        font-size: 1.6rem;
     }
 
-    .about-preview-content h2 {
+
+    /* -----------------------------
+       COMPANY STORY
+    ----------------------------- */
+
+    .about-story {
+        padding: 18px;
+
+        border-radius: 14px;
+    }
+
+
+    /*
+       No fixed image height.
+       Original image proportions
+       remain intact.
+    */
+
+    .about-story-content h2 {
         font-size: 2rem;
     }
+
+
+    /* -----------------------------
+       OLD PROJECT CARDS
+    ----------------------------- */
 
     .project-card,
     .project-card img {
@@ -325,6 +664,113 @@
         padding: 22px;
     }
 
+
+    /* -----------------------------
+       NEW PROJECTS PAGE
+    ----------------------------- */
+
+    /*
+       Small phones switch to one
+       column only.
+    */
+
+    .projects-page-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .project-page-card {
+        min-height: 280px;
+    }
+
+    .project-page-content {
+        padding: 25px;
+    }
+
+    .project-page-content h3 {
+        font-size: 1.35rem;
+    }
+
+
+    /* -----------------------------
+       PROJECT GALLERY
+    ----------------------------- */
+
+    .project-gallery-modal {
+        padding: 8px;
+    }
+
+    .project-gallery-dialog {
+        padding: 20px;
+
+        border-radius: 14px;
+    }
+
+    .gallery-close {
+        top: 12px;
+
+        right: 12px;
+
+        width: 38px;
+
+        height: 38px;
+    }
+
+    .gallery-project-info {
+        padding-right: 35px;
+
+        margin-bottom: 20px;
+    }
+
+    .gallery-project-info h2 {
+        font-size: 1.5rem;
+    }
+
+    .gallery-project-info p {
+        font-size: 0.9rem;
+    }
+
+    .project-carousel {
+        gap: 8px;
+    }
+
+    .carousel-image-container {
+        height: 280px;
+
+        border-radius: 9px;
+    }
+
+    .carousel-control {
+        flex: 0 0 34px;
+
+        width: 34px;
+
+        height: 34px;
+
+        font-size: 0.75rem;
+    }
+
+    .carousel-thumbnail {
+        flex-basis: 65px;
+
+        width: 65px;
+
+        height: 48px;
+    }
+
+
+    /* -----------------------------
+       BENEFITS
+    ----------------------------- */
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* -----------------------------
+       CTA
+    ----------------------------- */
+
     .consultation-cta {
         padding: 45px 20px;
     }
@@ -332,4 +778,50 @@
     .consultation-cta h2 {
         font-size: 1.9rem;
     }
+
+}
+
+/* =========================================
+   PROJECTS PAGE - FINAL 2 x 2 GRID FIX
+========================================= */
+
+.projects-gallery-section .projects-page-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    width: 100% !important;
+    max-width: 1100px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.projects-gallery-section .project-page-card {
+    width: 100%;
+    min-width: 0;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 768px) {
+
+    .projects-gallery-section .projects-page-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 18px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL PHONES
+========================================= */
+
+@media (max-width: 480px) {
+
+    .projects-gallery-section .projects-page-grid {
+        grid-template-columns: 1fr !important;
+    }
+
 }
