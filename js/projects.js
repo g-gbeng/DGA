@@ -53,8 +53,8 @@ const projectData = {
 
         images: [
             "assets/images/projects/IGWE-ONE.webp",
-            "assets/images/projects/IGWE-TWO.webp",
-            "assets/images/projects/IGWE-THREE.webp"
+            "assets/images/projects/IGWE-TWO.webp"
+            
         ]
 
     },
