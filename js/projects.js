@@ -52,9 +52,9 @@ const projectData = {
         year: "Completed: 2025",
 
         images: [
-            "assets/images/projects/IGWE-ONE.png",
-            "assets/images/projects/IGWE-TWO.png",
-            "assets/images/projects/IGWE-THREE.png"
+            "assets/images/projects/IGWE-ONE.webp",
+            "assets/images/projects/IGWE-TWO.webp",
+            "assets/images/projects/IGWE-THREE.webp"
         ]
 
     },
@@ -72,8 +72,8 @@ const projectData = {
         year: "Completed: 2022",
 
         images: [
-            "assets/images/projects/ROBAN STORES-ONE.jpg",
-            "assets/images/projects/ROBAN STORES-TWO.png"
+            "assets/images/projects/ROBAN-STORES-ONE.webp",
+            "assets/images/projects/ROBAN-STORES-TWO.webp"
         ]
 
     },
@@ -91,9 +91,9 @@ const projectData = {
         year: "Completed: 2021",
 
         images: [
-            "assets/images/projects/GWIS-ONE.png",
-            "assets/images/projects/GWIS-TWO.png",
-            "assets/images/projects/GWIS-THREE.png"
+            "assets/images/projects/GWIS-ONE.webp",
+            "assets/images/projects/GWIS-TWO.webp",
+            "assets/images/projects/GWIS-THREE.webp"
         ]
 
     },
@@ -111,9 +111,9 @@ const projectData = {
         year: "Completed: 2018",
 
         images: [
-            "assets/images/projects/DGA-ONE.png",
-            "assets/images/projects/DGA-TWO.png",
-            "assets/images/projects/DGA-THREE.png"
+            "assets/images/projects/DGA-ONE.webp",
+            "assets/images/projects/DGA-TWO.webp",
+            "assets/images/projects/DGA-THREE.webp"
         ]
 
     }
