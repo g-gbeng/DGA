@@ -73,28 +73,37 @@
         gap: 22px;
     }
 
+       .about-preview-content {
+        padding: 40px;
+    }
+
+    .about-preview-content h3 {
+        font-size: 1.85rem;
+    }
+
+    .about-preview-content p {
+        font-size: 0.93rem;
+        line-height: 1.75;
+    }
 
     /* -----------------------------
        COMPANY STORY
     ----------------------------- */
+.about-story-content {
+        padding: 40px;
+    }
 
-    .about-story {
-        grid-template-columns: 0.9fr 1.1fr;
+    .about-story-content h2 {
+        font-size: 2rem;
+    }
 
-        gap: 35px;
-
-        padding: 30px;
+    .about-story-content p {
+        font-size: 0.93rem;
+        line-height: 1.75;
     }
 
 
-    /*
-       Do NOT force a height on the
-       About Story image here.
-
-       The original image dimensions
-       from style.css should control
-       the appearance.
-    */
+    
 
 
     /* -----------------------------
@@ -337,42 +346,66 @@
     }
 
 
-    /*
-       No fixed height here.
+.about-preview {
+        grid-template-columns: 1fr;
+    }
 
-       This allows the original
-       About Preview image styling
-       from style.css to remain active.
-    */
+    .about-preview-image {
+        width: 100%;
+    }
+
+    .about-preview-image img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .about-preview-content {
+        padding: 35px 30px;
+    }
 
     .about-preview-content h3 {
-        font-size: 1.8rem;
+        font-size: 1.85rem;
+        margin-bottom: 18px;
+    }
+
+    .about-preview-content p {
+        font-size: 0.94rem;
+        line-height: 1.8;
+    }
+
+    .about-preview-content .btn {
+        align-self: flex-start;
     }
 
 
-    /* -----------------------------
-       COMPANY STORY
-    ----------------------------- */
-
-    .about-story {
+ .about-story {
         grid-template-columns: 1fr;
-
-        gap: 30px;
-
-        padding: 25px;
     }
 
+    .about-story-image {
+        height: auto;
+    }
 
-    /*
-       No fixed height here.
+    .about-story-image img {
+        width: 100%;
+        height: auto;
+        min-height: 0;
+        object-fit: contain;
+    }
 
-       This allows the original
-       Company Story image styling
-       from style.css to remain active.
-    */
+    .about-story-content {
+        padding: 35px 30px;
+    }
 
     .about-story-content h2 {
-        font-size: 2.2rem;
+        font-size: 2rem;
+        margin-bottom: 18px;
+    }
+
+    .about-story-content p {
+        font-size: 0.94rem;
+        line-height: 1.8;
     }
 
 
@@ -617,37 +650,47 @@
         border-radius: 14px;
     }
 
+.about-preview {
+        border-radius: 14px;
+    }
 
-    /*
-       No fixed image height.
-       Original image proportions
-       remain intact.
-    */
+    .about-preview-content {
+        padding: 30px 22px;
+    }
 
     .about-preview-content h3 {
-        font-size: 1.6rem;
+        font-size: 1.65rem;
+    }
+
+    .about-preview-content p {
+        font-size: 0.92rem;
+        line-height: 1.75;
+    }
+
+    .about-preview-content .btn {
+        width: 100%;
+        text-align: center;
     }
 
 
     /* -----------------------------
        COMPANY STORY
     ----------------------------- */
-
-    .about-story {
-        padding: 18px;
-
+ .about-story {
         border-radius: 14px;
     }
 
-
-    /*
-       No fixed image height.
-       Original image proportions
-       remain intact.
-    */
+    .about-story-content {
+        padding: 30px 22px;
+    }
 
     .about-story-content h2 {
-        font-size: 2rem;
+        font-size: 1.75rem;
+    }
+
+    .about-story-content p {
+        font-size: 0.92rem;
+        line-height: 1.75;
     }
 
 
