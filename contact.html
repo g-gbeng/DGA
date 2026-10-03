@@ -88,7 +88,8 @@
                     Projects
                 </a>
 
-                <a href="consultation.html" class="nav-cta">
+                <a href="https://forms.gle/xDk9KdWSP63AHjFe8" class="nav-cta"
+                    onclick="trackConsultationClick('navigation')">
                     Book a Consultation
                 </a>
 
@@ -188,7 +189,8 @@
 
                     <!-- PHONE -->
 
-                    <a href="tel:2348188000002" class="contact-info-card reveal" data-contact-action="phone">
+                    <a href="tel:2348188000002" class="contact-info-card reveal" data-contact-action="phone"
+                        onclick="trackContactAction('phone')">
 
                         <div class="contact-info-icon">
                             ☎
@@ -217,7 +219,8 @@
                     <!-- WHATSAPP -->
 
                     <a href="https://wa.me/2348034721796" target="_blank" rel="noopener noreferrer"
-                        class="contact-info-card reveal" data-contact-action="whatsapp">
+                        class="contact-info-card reveal" data-contact-action="whatsapp"
+                        onclick="trackContactAction('WhatsApp')">
 
                         <div class="contact-info-icon">
                             💬
@@ -245,7 +248,8 @@
 
                     <!-- EMAIL -->
 
-                    <a href="mailto:kconuchukwu@gmail.com" class="contact-info-card reveal" data-contact-action="email">
+                    <a href="mailto:kconuchukwu@gmail.com" class="contact-info-card reveal" data-contact-action="email"
+                        onclick="trackContactAction('email')">
 
                         <div class="contact-info-icon">
                             ✉
@@ -329,7 +333,9 @@
 
                     <!-- CONSULTATION -->
 
-                    <a href="consultation.html" class="contact-info-card contact-info-card-accent reveal">
+                    <a href="https://forms.gle/xDk9KdWSP63AHjFe8"
+                        class="contact-info-card contact-info-card-accent reveal"
+                        onclick="trackConsultationClick('contact-card')">
 
                         <div class="contact-info-icon">
                             ↗
@@ -396,7 +402,8 @@
                             project goals, requirements and next steps.
                         </p>
 
-                        <a href="consultation.html" class="btn btn-primary">
+                        <a href="https://forms.gle/xDk9KdWSP63AHjFe8" class="btn btn-primary"
+                            onclick="trackConsultationClick('office-section')">
                             Book a Consultation
                         </a>
 
@@ -446,17 +453,17 @@
 
 
                     <a href="https://www.instagram.com/digitalglobalassociates?stkn=b2hyc3JzNm1hZWd5" target="_blank"
-                        rel="noopener noreferrer">
+                        rel="noopener noreferrer" onclick="trackSocialMediaClick('Instagram')">
                         Instagram
                     </a>
 
                     <a href="https://www.linkedin.com/company/digital-global-associates-construction-company/"
-                        target="_blank" rel="noopener noreferrer">
+                        target="_blank" rel="noopener noreferrer" onclick="trackSocialMediaClick('LinkedIn')">
                         LinkedIn
                     </a>
 
                     <a href="https://www.tiktok.com/@keneonu?_r=1&_t=ZS-9A1Pi1eJqL6" target="_blank"
-                        rel="noopener noreferrer">
+                        rel="noopener noreferrer" onclick="trackSocialMediaClick('TikTok')">
                         TikTok
                     </a>
 
@@ -490,7 +497,7 @@
                             can help bring your plans to life.
                         </p>
 
-                        <a href="consultation.html" class="btn">
+                        <a href="https://forms.gle/xDk9KdWSP63AHjFe8" class="btn">
                             Book a Consultation
                         </a>
 
@@ -568,7 +575,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="consultation.html">
+                            <a href="https://forms.gle/xDk9KdWSP63AHjFe8" onclick="trackConsultationClick('footer')">
                                 Consultation
                             </a>
                         </li>
@@ -628,13 +635,15 @@
                     <ul class="footer-links">
 
                         <li>
-                            <a href="tel:2348188000002" data-contact-action="phone">
+                            <a href="tel:2348188000002" data-contact-action="phone"
+                                onclick="trackContactAction('phone')">
                                 Call us
                             </a>
                         </li>
 
                         <li>
-                            <a href="mailto:kconuchukwu@gmail.com" data-contact-action="email">
+                            <a href="mailto:kconuchukwu@gmail.com" data-contact-action="email"
+                                onclick="trackContactAction('email')">
                                 Email us
                             </a>
                         </li>
@@ -648,18 +657,26 @@
 
                     <div class="social-links">
                         <a href="https://www.tiktok.com/@keneonu?_r=1&_t=ZS-9A1Pi1eJqL6" aria-label="TikTok"
-                            target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-tiktok"></i>
+                            target="_blank" rel="noopener noreferrer" onclick="trackSocialMediaClick('TikTok')">
+
+                            <i class="fa-brands fa-tiktok"></i>
+
                         </a>
 
                         <a href="https://www.instagram.com/digitalglobalassociates?stkn=b2hyc3JzNm1hZWd5"
-                            aria-label="Instagram" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-instagram"></i>
+                            aria-label="Instagram" target="_blank" rel="noopener noreferrer"
+                            onclick="trackSocialMediaClick('Instagram')">
+
+                            <i class="fa-brands fa-instagram"></i>
+
                         </a>
 
                         <a href="https://www.linkedin.com/company/digital-global-associates-construction-company/"
-                            aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-linkedin-in"></i>
+                            aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"
+                            onclick="trackSocialMediaClick('LinkedIn')">
+
+                            <i class="fa-brands fa-linkedin-in"></i>
+
                         </a>
                     </div>
                 </div>
@@ -687,7 +704,7 @@
 ========================================== -->
 
     <a href="https://wa.me/2348034721796" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
-        aria-label="Chat with us on WhatsApp">
+        aria-label="Chat with us on WhatsApp" onclick="trackContactAction('WhatsApp')">
 
         <i class="fa-brands fa-whatsapp"></i>
 

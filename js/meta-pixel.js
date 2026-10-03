@@ -2,18 +2,9 @@
    META PIXEL CONFIGURATION
 ========================================= */
 
-/*
-    The Meta Pixel ID will be provided by
-    the client's social media manager.
 
-    Example:
 
-    const META_PIXEL_ID = "123456789012345";
-
-    Do NOT add a real ID until it is provided.
-*/
-
-const META_PIXEL_ID = "";
+const META_PIXEL_ID = "1474343974521133";
 
 
 /* =========================================
@@ -54,6 +45,55 @@ if (META_PIXEL_ID) {
     );
 
     fbq("init", META_PIXEL_ID);
-    fbq("track", "PageView");
 
+    /* Track every page visit */
+    fbq("track", "PageView");
+}
+
+
+/* =========================================
+   CONSULTATION TRACKING
+========================================= */
+
+function trackConsultationClick(source) {
+
+    if (typeof fbq === "function") {
+
+        fbq("track", "Lead", {
+            source: source
+        });
+
+    }
+}
+
+
+/* =========================================
+   CONTACT TRACKING
+========================================= */
+
+function trackContactAction(method) {
+
+    if (typeof fbq === "function") {
+
+        fbq("track", "Contact", {
+            method: method
+        });
+
+    }
+}
+
+
+/* =========================================
+   SOCIAL MEDIA TRACKING
+========================================= */
+
+function trackSocialMediaClick(platform) {
+
+    if (typeof fbq === "function") {
+
+        fbq("trackCustom", "SocialMediaClick", {
+            platform: platform
+        });
+
+    }
 }
