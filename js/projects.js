@@ -66,10 +66,10 @@ const projectData = {
 
         client: "Roban Stores Limited",
 
-        title: "Vicarage Building",
+        title: "Shopping Mall",
 
         description:
-            "Construction of a vicarage building at St. Thomas Catholic Church, Nnewi.",
+            "Construction of a shopping mall for Roban Stores Limited.",
 
         year: "Completed: 2022",
 
@@ -82,6 +82,29 @@ const projectData = {
 
 
     project3: {
+
+        client: "CMI Communications Limited",
+
+        title: "Modern Customized Radio Station",
+
+        description:
+            "Construction of a modern customized radio station - Office complex and studios.",
+
+        year: "Completed: 2022",
+
+        images: [
+            "assets/images/projects/CMI-ONE.jpg",
+            "assets/images/projects/CMI-TWO.jpg",
+            "assets/images/projects/CMI-THREE.jpg",
+            "assets/images/projects/CMI-FOUR.jpg",
+            "assets/images/projects/CMI-FIVE.jpg",
+            
+        ]
+
+    },
+
+
+    project4: {
 
         client: "Gods’ Wisdom International Schools",
 
@@ -96,26 +119,6 @@ const projectData = {
             "assets/images/projects/GWIS-ONE.webp",
             "assets/images/projects/GWIS-TWO.webp",
             "assets/images/projects/GWIS-THREE.webp"
-        ]
-
-    },
-
-
-    project4: {
-
-        client: "Digital Global Associates",
-
-        title: "Head Office Building",
-
-        description:
-            "Construction of the Digital Global Associates head office building.",
-
-        year: "Completed: 2018",
-
-        images: [
-            "assets/images/projects/DGA-ONE.webp",
-            "assets/images/projects/DGA-TWO.webp",
-            "assets/images/projects/DGA-THREE.webp"
         ]
 
     }
